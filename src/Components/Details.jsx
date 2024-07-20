@@ -16,8 +16,8 @@ const Details = () => {
                 <p className='mt-10 w-[70%] text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptates, soluta veritatis doloremque sapiente velit praesentium dolorum doloribus aspernatur perspiciatis!</p>
             </div>
             <div className='w-[60%]  h-full flex'>
-                <div className='w-full h-full border '></div>
-                <div className='w-full h-full border'></div>
+                <div className='w-full h-full '></div>
+                <div className='w-full h-full '></div>
             </div>
         </div>
 
@@ -45,7 +45,7 @@ const Details = () => {
             </div>
 
 
-            <div className='w-full h-[50vh] flex border mt-4 gap-4'>
+            <div className='w-full h-[50vh] flex  mt-4 gap-4'>
                 <div className='w-full h-full border border-black border-dashed rounded-xl'></div>
                 <div className='w-full h-full border border-black border-dashed rounded-xl'></div>
 

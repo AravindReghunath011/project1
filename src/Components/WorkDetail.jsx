@@ -5,8 +5,8 @@ import Card2 from "./Card2";
 const WorkDetail = () => {
   return (
     <div className="w-full h-full ">
-      <div className="w-[90%] h-full border m-auto">
-        <h1 className="text-9xl font-bold text-black tracking-tighter  w-full border text-center uppercase">
+      <div className="w-[90%] h-full  m-auto">
+        <h1 className="text-9xl font-bold text-black tracking-tighter  w-full  text-center uppercase">
           Branding
         </h1>
 
@@ -43,7 +43,7 @@ const WorkDetail = () => {
                 />
               </div>
             </div>
-            <div className="border flex flex-col gap-4 w-full">
+            <div className=" flex flex-col gap-4 w-full">
             <div className="h-[34vh]">
                 <Card
                   i={1}
@@ -69,7 +69,7 @@ const WorkDetail = () => {
                 />
               </div>
             </div>
-            <div className="border flex flex-col gap-4 w-full">
+            <div className=" flex flex-col gap-4 w-full">
             <div className="h-[34vh]">
                 <Card
                   i={3}
