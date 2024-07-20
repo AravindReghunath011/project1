@@ -1,0 +1,16 @@
+@import url("https://use.typekit.net/ped6nwr.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hover-scale-custom {
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .hover-scale-custom:hover {
+      z-index: 100;
+      transform: scaleX(1.2) scaleY(1.1);
+    }
+  }
