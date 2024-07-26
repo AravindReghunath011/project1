@@ -24,6 +24,9 @@ export default {
         '120': '1.2',
         '150': '1.5',
       },
+      fontSize:{
+        'logo' :'18rem'
+      },
       // backgroundImage: {
       //   'noise': 'repeating-radial-gradient(circle, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05) 1px, transparent 1px, transparent 100px)',
       // },

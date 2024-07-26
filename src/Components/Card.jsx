@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ i, image, title, category, categoryTitle,categoryNumber }) => {
   return (
     <>
+    <Link to={'/details'}>
       {categoryTitle ? (
         <div
           className={`max-w-sm  uppercase lg:min-h-[32vh] h-full flex flex-col relative w-full border-8 overflow-hidden   border-black  duration-200 `}
@@ -32,6 +34,7 @@ const Card = ({ i, image, title, category, categoryTitle,categoryNumber }) => {
           </div>
         </div>
       )}
+      </Link>
     </>
   );
 };

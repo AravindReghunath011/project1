@@ -8,6 +8,8 @@ import WorkDetail from './Components/WorkDetail';
 import Details from './Components/Details';
 import Navbar from './Components/Navbar';
 import IntroAnimation from './Components/Intro';
+import ProjectDetails from './Components/ProjectDetails';
+import Footer from './Components/Footer';
 
 function App() {
   useEffect(()=>{
@@ -30,11 +32,13 @@ requestAnimationFrame(raf)
     <div className='pt-24 bg-primary'>
     <Routes>
       <Route path='/' element={<LandingPage/>}/>
+      <Route path='/details' element={<ProjectDetails/>}/>
       <Route path='/details2' element={<Details/>}/>
-      <Route path='/details' element={<WorkDetail/>}/>
+      <Route path='/works' element={<WorkDetail/>}/>
       <Route path='/intro' element={<IntroAnimation/>}/>
     </Routes>
     </div>
+    <Footer/>
     
     </>
   );

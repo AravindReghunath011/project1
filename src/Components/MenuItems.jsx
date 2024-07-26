@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MenuItems = ({ isOpen }) => {
   const [hoveredSection, setHoveredSection] = useState(null);
@@ -43,8 +44,9 @@ const MenuItems = ({ isOpen }) => {
       animate={isOpen ? 'open' : 'close'}
       className={`fixed h-screen  text-white  w-screen uppercase font-scandia inset-0 flex  text-8xl font-bold flex-col ${isOpen && 'z-40'} items-center justify-center gap-10`}
     >
-      {['About', 'Works', 'Contact'].map((section) => (
-        <div
+      {['about', 'works', 'contact'].map((section) => (
+        <Link to={'/' + section}>
+        <div 
           key={section}
           className="h-[12vh] overflow-hidden relative"
           onMouseEnter={() => setHoveredSection(section)}
@@ -67,6 +69,7 @@ const MenuItems = ({ isOpen }) => {
             {section}
           </motion.h1>
         </div>
+        </Link>
       ))}
     </motion.div>
   );
