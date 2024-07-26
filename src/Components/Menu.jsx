@@ -23,7 +23,7 @@ const Menu = ({ isOpen }) => {
   }, []);
 
   return (
-    <div className={`w-screen fixed overflow-hidden flex inset-0 h-screen ${showZIndex && 'z-40'}`}>
+    <div className={`w-screen fixed overflow-hidden -z-20 flex inset-0 h-screen ${showZIndex && 'z-40'}`}>
       {[...Array(20)].map((_, i) => (
         <div key={i} className="w-[5vw]">
           <Block isOpen={isOpen} />

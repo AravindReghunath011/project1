@@ -10,6 +10,7 @@ import Navbar from './Components/Navbar';
 import IntroAnimation from './Components/Intro';
 import ProjectDetails from './Components/ProjectDetails';
 import Footer from './Components/Footer';
+import About from './Components/About';
 
 function App() {
   useEffect(()=>{
@@ -33,6 +34,7 @@ requestAnimationFrame(raf)
     <Routes>
       <Route path='/' element={<LandingPage/>}/>
       <Route path='/details' element={<ProjectDetails/>}/>
+      <Route path='/about' element={<About/>}/>
       <Route path='/details2' element={<Details/>}/>
       <Route path='/works' element={<WorkDetail/>}/>
       <Route path='/intro' element={<IntroAnimation/>}/>

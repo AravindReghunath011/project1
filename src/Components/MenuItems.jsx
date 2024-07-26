@@ -11,11 +11,9 @@ const MenuItems = ({ isOpen }) => {
     },
     open: {
       opacity: 1,
-      z: 50,
     },
     close: {
       opacity: 0,
-      z: 0,
     },
   };
 
@@ -42,7 +40,8 @@ const MenuItems = ({ isOpen }) => {
       variants={variants}
       initial="initial"
       animate={isOpen ? 'open' : 'close'}
-      className={`fixed h-screen  text-white  w-screen uppercase font-scandia inset-0 flex  text-8xl font-bold flex-col ${isOpen && 'z-40'} items-center justify-center gap-10`}
+      style={{ zIndex: isOpen ? 40 : -99 }}
+      className={`fixed h-screen  text-white  w-screen uppercase font-scandia -z-20 inset-0 flex  text-8xl font-bold flex-col  items-center justify-center gap-10`}
     >
       {['about', 'works', 'contact'].map((section) => (
         <Link to={'/' + section}>
