@@ -11,6 +11,7 @@ import IntroAnimation from './Components/Intro';
 import ProjectDetails from './Components/ProjectDetails';
 import Footer from './Components/Footer';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 function App() {
   useEffect(()=>{
@@ -37,6 +38,7 @@ requestAnimationFrame(raf)
       <Route path='/about' element={<About/>}/>
       <Route path='/details2' element={<Details/>}/>
       <Route path='/works' element={<WorkDetail/>}/>
+      <Route path='/contact' element={<Contact/>}/>
       <Route path='/intro' element={<IntroAnimation/>}/>
     </Routes>
     </div>
